@@ -302,6 +302,18 @@ obj.customer_conversion('customer@example.com', 10050)
 obj.customer_conversion('customer@example.com')
 ```
 
+### Get Email Logs for a Customer
+This will retrieve email logs for a customer.
+
+Optional Arguments:
+- **count** – The number of logs to return. _Max: 100, Default: 100._
+- **created_gt** – Return logs created strictly after the given UTC timestamp.
+- **created_lt** – Return logs created strictly before the given UTC timestamp.
+
+```ruby
+obj.customer_email_log('customer@example.com', count: 10)
+```
+
 ## Templates
 
 ```ruby
